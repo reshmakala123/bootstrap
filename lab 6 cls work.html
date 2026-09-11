@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback Form</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+    <div class="col-md-7 col-lg-6">
+    <div class="card shadow-sm border-0">
+    <div class="card-body p-4">
+    <h2 class="text-center mb-4">Website Feedback</h2>
+    <form>
+            <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+             <input type="text"
+             class="form-control"
+              id="name"
+             placeholder="Enter your name"
+               required>
+            </div>
+             <div class="mb-3">
+             <label for="email" class="form-label">Email</label>
+             <input type="email"
+             class="form-control"
+             id="email"
+             placeholder="Enter your email"
+             required>
+             </div>
+       <div class="mb-3">
+        <label for="feedback" class="form-label">Feedback</label>
+          <textarea class="form-control"
+              id="feedback"
+              rows="4"
+             placeholder="Write your feedback..."
+             required></textarea>
+        </div>
+            <div class="mb-3">
+              <label for="source" class="form-label">
+                 How did you find our site?
+                </label>
+                <select class="form-select" id="source" required>
+                     <option value="">Select an option</option>
+                     <option>Google Search</option>
+                     <option>Social Media</option>
+                     <option>Friend or Colleague</option>
+                     <option>Advertisement</option>
+                     <option>Other</option>
+                </select>
+          </div>
+            <div class="mb-4">
+            <label class="form-label d-block">
+                How satisfied are you?
+             </label>
+            <div class="d-flex gap-4">
+            <div class="form-check">
+                <input class="form-check-input"
+                type="radio"
+               name="satisfaction"
+               id="rate1"
+               value="1"
+               required>
+            <label class="form-check-label" for="rate1">1</label>
+             </div>
+                 <div class="form-check">
+                    <input class="form-check-input"
+                           type="radio"
+                           name="satisfaction"
+                           id="rate2"
+                            value="2">
+            <label class="form-check-label" for="rate2">2</label>
+                 </div>
+                      <div class="form-check">
+                          <input class="form-check-input"
+                               type="radio"
+                                  name="satisfaction"
+                                  id="rate3"
+                                  value="3">
+              <label class="form-check-label" for="rate3">3</label>
+                     </div>
+                         <div class="form-check">
+                         <input class="form-check-input"
+                          type="radio"
+                          name="satisfaction"
+                          id="rate4"
+                          value="4">
+                <label class="form-check-label" for="rate4">4</label>
+                         </div>
+                         <div class="form-check">
+                        <input class="form-check-input"
+                           type="radio"
+                           name="satisfaction"
+                            id="rate5"
+                            value="5">
+                <label class="form-check-label" for="rate5">5</label>
+                      </div>
+                      </div>
+                     </div>
+                     <button type="submit" class="btn btn-primary w-100">
+                         Submit Feedback
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
